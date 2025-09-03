@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人履歷</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100 font-sans">
+  <!-- 導覽列 -->
+  <header class="bg-white shadow-md p-6 fixed w-full top-0 z-10">
+    <div class="container mx-auto flex flex-col md:flex-row items-center">
+      <img src="./img/joyce.jpg" alt="個人頭像" class="h-32 rounded-full mb-4 md:mb-0 md:mr-6"
+        style="width:auto;max-width:100%;">
+      <div>
+        <h1 class="text-3xl font-bold text-gray-800">許加宜</h1>
+        <p class="text-gray-600">電子郵件：jiayihsu0518@gmail.com</p>
+        <p class="text-gray-600">連絡電話：0968868166</p>
+        <p class="text-gray-600">GitHub：<a href="https://github.com/JoyceHsu0" class="text-blue-600 hover:underline"
+            target="_blank">https://github.com/JoyceHsu0</a></p>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主要內容區域 -->
+  <main class="container mx-auto pt-48 pb-10 px-4">
+    <!-- 標籤導航 -->
+    <nav class="flex justify-start mb-6 space-x-2"></nav>
+    <button class="tab-button px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+      onclick="openTab('resume')">簡歷</button>
+    <button class="tab-button px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400"
+      onclick="openTab('education')">學經歷</button>
+    <button class="tab-button px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400"
+      onclick="openTab('thesis')">碩士論文</button>
+    <button class="tab-button px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400"
+      onclick="openTab('portfolio')">作品集</button>
+    </nav>
+
+
+    <!-- 標籤內容 -->
+    <div id="resume" class="tab-content block">
+      <br>
+      <h2 class="text-2xl font-bold mb-4">簡歷</h2>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold">個人簡歷</h3>
+        <p class="text-gray-700"></p>
+        碩士畢業於<b>國立台北科技大學資訊工程所</b>。會使用<b>Python</b>、<b>SQL</b>
+        與多種開源套件，包括<b>PyTorch</b>與<b>Monai</b>等，並能應用於機器學習模型建構與資料分析。同時，我也具備<b>Unity</b>
+        引擎的開發經驗，能應用於 3D 專案與即時互動體驗設計。
+        研究所期間以<b>可解釋性人工智慧</b>為研究主題，開發結合可視化分析框架的深度學習模型，提升模型可解釋性與運算效能。此經驗讓我在<b>影像處理</b>、<b>模型最佳化</b>與系統設計上累積了經驗。
+        <br><br>
+        大學就讀於<b>彰化師範大學資訊工程系</b>，期間亦參與<b>智慧停車場導航系統專案</b>，負責<b>API 實作</b>與<b>APP 開發</b>，將 Dijkstra 最短路徑演算法、iBeacon
+        室內定位與機器學習和前端進行結合，並透過自走車模擬驗證系統效能，展現了我在軟體工程與跨領域應用的實作經驗。這些專案使我熟悉從資料處理、模型訓練到 API 部署的完整流程，並養成將理論落實於實務的能力。
+        <br><br>
+        我保持主動學習的態度，樂於挑戰並快速適應新技術，個性細心且具高度責任感。我期待能在軟體工程師的職位中，發揮既有經驗並持續成長，為團隊帶來實質價值與長遠貢獻。
+        </p>
+      </div>
+    </div>
+
+    <!-- 標籤內容 -->
+    <div id="education" class="tab-content hidden">
+      <br>
+      <h2 class="text-2xl font-bold mb-4">學歷</h2>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold">碩士</h3>
+        <p class="text-gray-700">國立台北科技大學 - 資訊工程所 (2023 - 2025)</p>
+        <img src="./img/ntut歷年成績單.jpg" alt="ntut歷年成績單" class="w-48 rounded mb-4 object-contain cursor-pointer"
+          onclick="openImageModal('./img/ntut歷年成績單.jpg', 'ntut歷年成績單')">
+        <h3 class="text-xl font-semibold">學士</h3>
+        <p class="text-gray-700">國立彰化師範大學 - 學士班 (2019 - 2023)</p>
+        <img src="./img/ncue歷年成績單.jpg" alt="ncue歷年成績單" class="w-48 rounded mb-4 object-contain cursor-pointer"
+          onclick="openImageModal('./img/ncue歷年成績單.jpg', 'ncue歷年成績單')">
+      </div>
+      <br>
+      <h2 class="text-2xl font-bold mb-4">語言</h2>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold">英文 - 多益 780 分</h3>
+        <img src="./img/toeic.jpg" alt="TOEIC" class="w-48 rounded mb-4 object-contain cursor-pointer"
+          onclick="openImageModal('./img/toeic.jpg', 'TOEIC')">
+      </div>
+    </div>
+
+    <div id="thesis" class="tab-content hidden">
+      <br>
+      <h2 class="text-2xl font-bold mb-4">碩士論文</h2>
+      <div class="flex flex-col gap-6">
+        <!-- 論文題目 -->
+        <div class="bg-white p-6 rounded shadow">
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold">基於反向傳播映射醫學影像分割張量立體成像</h3>
+              <h3 class="text-xl font-semibold">Backpropagation-based Mapping Medical Image Segmentation Tensor Volume Rendering</h3>
+              <p class="text-gray-700">本研究設計了一個新的可視化系統，把「梯度加權類別激活映射 (Grad-CAM)」和「三維影像呈現技術 (Volume
+                Rendering)」結合。透過這個系統，使用者可以自由選擇 UNetCNX 模型裡的不同層級或通道，並看到對應的熱力圖，幫助分析模型是依據哪些特徵做判斷。
+                為了讓系統更靈活又能順暢運作，本研究調整了模型的架構和推論方式，並把「熱力圖產生」和「三維繪製」拆成獨立模組。這樣一來，使用者就能即時改變視角或顯示方式。
+                <br>本研究的主要貢獻是：<br>
+                (1) 首度將 Grad-CAM 應用在三維影像分割模型上<br>
+                (2) 結合 Volume Rendering 技術，讓使用者可以以更全面的方式理解深度學習模型。<br>
+                (3) 提供逐層以及逐通道的特徵可視化功能，幫助使用者深入分析模型的判斷依據。
+              </p>
+              <p class="text-gray-700">關鍵詞：深度學習、三維醫學影像分割、可解釋性人工智慧、梯度加權類別激活映射、立體成像</p>
+              <a href="https://github.com/JoyceHsu0/GCD" class="text-xl font-semibold hover:underline">點擊前往專案GitHub</a>
+            </div>
+
+            <div class="w-full md:w-96">
+              <h3 class="text-xl font-semibold">論文說明影片</h3>
+              <iframe src="https://www.youtube.com/embed/uvZO47YlpQk?si=ePN_IJ7aqbIlFzBp" title="論文說明影片"
+                class="w-full h-64 rounded mb-4" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <!-- 系統架構與演算法設計（並排） -->
+        <div class="flex flex-row gap-6">
+          <div class="bg-white p-6 rounded shadow flex-1">
+            <h3 class="text-xl font-semibold">系統架構</h3>
+            <img src="img/figure03_1.jpg" alt="系統架構圖" class="w-full rounded mb-4 object-contain">
+
+          </div>
+          <div class="bg-white p-6 rounded shadow flex-1">
+            <h3 class="text-xl font-semibold">演算法設計</h3>
+            <img src="img/figure03_4.jpg" alt="演算法設計圖" class="w-full rounded mb-4 object-contain">
+
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold">系統展示</h3>
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+            <div>
+              Transfer Function & Overlay & Attention map
+              <iframe src="https://www.youtube.com/embed/3rELzrg20FY?si=im5RR0GRWzbnz4sl"
+                title="Transfer Function & Overlay & Attention map" class="w-full h-48 rounded mb-4" frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+            <div>
+              Rotation Speed<br><br>
+              <iframe src="https://www.youtube.com/embed/yidT4mh3rgE?si=76tU0W6wbcLWGVWa" title="Rotation Speed"
+                class="w-full h-48 rounded mb-4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div>
+              Layer Selection & Channel Selection<br><br>
+              <iframe src="https://www.youtube.com/embed/amEu7Z5mmA4?si=KEvViCyzux5d6tvU"
+                title="Layer Selection & Channel Selection" class="w-full h-48 rounded mb-4" frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+            <div>
+              Screenshot & Record Video<br><br>
+              <iframe src="https://www.youtube.com/embed/9oUDD5kPd6U?si=hOvL0ZVZY9gBdtmi"
+                title="Screenshot & Record Video" class="w-full h-48 rounded mb-4" frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <!-- 系統應用 -->
+        <!-- <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold">系統應用</h3>
+        </div> -->
+      </div>
+    </div>
+
+    <div id="portfolio" class="tab-content hidden">
+      <br>
+      <h2 class="text-2xl font-bold mb-4">作品集</h2>
+
+      <!-- 過濾器區塊 -->
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold mb-2">過濾標籤</h3>
+        <div id="filter-buttons" class="flex flex-wrap gap-2"></div>
+      </div>
+
+      <!-- 卡片容器 -->
+      <div id="project-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+
+    <!-- 模態框 -->
+    <div id="modal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+      onclick="closeModalOnOutsideClick(event)">
+      <div class="bg-white p-6 rounded shadow-lg max-w-4xl w-full max-h-[80vh] flex flex-col">
+        <div class="flex-1 overflow-y-auto">
+          <h2 id="modal-title" class="text-2xl font-bold mb-4"></h2>
+          <div id="modal-content" class="text-gray-700"></div>
+        </div>
+        <div class="sticky bottom-0 bg-white pt-4 -mx-6 px-6 border-t border-gray-200">
+          <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full"
+            onclick="closeModal()">關閉</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // 定義顏色池
+    const tagColors = {
+      'mysql': { bg: 'bg-blue-100', text: 'text-blue-800' },
+      'machine-learning': { bg: 'bg-green-100', text: 'text-green-800' },
+      'python': { bg: 'bg-yellow-100', text: 'text-yellow-800' },
+      'javascript': { bg: 'bg-purple-100', text: 'text-purple-800' },
+      'pytorch': { bg: 'bg-teal-100', text: 'text-teal-800' },
+      'vtk': { bg: 'bg-indigo-100', text: 'text-indigo-800' },
+      'volume-rendering': { bg: 'bg-pink-100', text: 'text-pink-800' },
+      'opengl': { bg: 'bg-blue-200', text: 'text-gray-800' },
+      'opencv': { bg: 'bg-gray-100', text: 'text-gray-800' },
+      'c++': { bg: 'bg-red-100', text: 'text-red-800' },
+      'computer-graphics': { bg: 'bg-red-100', text: 'text-red-800' },
+      'xai': { bg: 'bg-purple-100', text: 'text-purple-800' },
+      'php': { bg: 'bg-green-100', text: 'text-green-800' },
+      'android-app': { bg: 'bg-yellow-100', text: 'text-yellow-800' },
+      'restful-api': { bg: 'bg-teal-100', text: 'text-teal-800' },
+      'data-analysis': { bg: 'bg-indigo-100', text: 'text-indigo-800' },
+      'unity': { bg: 'bg-gray-200', text: 'text-gray-800' },
+      'kotlin': { bg: 'bg-gray-200', text: 'text-gray-800' },
+      'java': { bg: 'bg-gray-200', text: 'text-gray-800' },
+      'default': { bg: 'bg-gray-100', text: 'text-gray-800' },
+      'javascript': { bg: 'bg-purple-100', text: 'text-purple-800' },
+      'vr': { bg: 'bg-blue-100', text: 'text-blue-800' },
+      'xr': { bg: 'bg-green-100', text: 'text-green-800' }
+    };
+
+    // 根據標籤名稱獲取顏色
+    function getTagColor(tag) {
+      return tagColors[tag.toLowerCase()] || tagColors['default'];
+    }
+
+    // 標籤切換
+    function openTab(tabName) {
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(content => {
+        content.classList.add('hidden');
+        content.classList.remove('block');
+      });
+
+      const buttons = document.querySelectorAll('.tab-button');
+      buttons.forEach(button => button.classList.remove('bg-blue-500', 'text-white'));
+      buttons.forEach(button => button.classList.add('bg-gray-300', 'text-gray-800'));
+
+      document.getElementById(tabName).classList.remove('hidden');
+      document.getElementById(tabName).classList.add('block');
+      event.currentTarget.classList.remove('bg-gray-300', 'text-gray-800');
+      event.currentTarget.classList.add('bg-blue-500', 'text-white');
+    }
+
+    // 載入專案數據並渲染卡片與過濾按鈕
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('projects.json')
+        .then(response => response.json())
+        .then(projects => {
+          const projectCardsContainer = document.getElementById('project-cards');
+          const filterButtonsContainer = document.getElementById('filter-buttons');
+
+          // 提取唯一標籤
+          const allTags = [...new Set(projects.flatMap(project => project.tags))];
+
+          // 動態生成過濾按鈕
+          filterButtonsContainer.innerHTML = `
+            <button class="filter-button px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300" data-tag="all">全部</button>
+            ${allTags.map(tag => `
+              <button class="filter-button px-3 py-1 ${getTagColor(tag).bg} ${getTagColor(tag).text} rounded hover:bg-opacity-75" data-tag="${tag}">${tag}</button>
+            `).join('')}
+          `;
+
+          // 動態生成卡片
+          projects.forEach(project => {
+            const card = document.createElement('div');
+            card.className = 'project-card bg-white p-6 rounded shadow cursor-pointer hover:shadow-lg';
+            card.setAttribute('data-tags', project.tags.join(' '));
+            card.setAttribute('data-id', project.id);
+            card.innerHTML = `
+              <h3 class="text-xl font-semibold mb-2">${project.title}</h3>
+              <p class="text-gray-700 mb-4">${project.shortDescription}</p>
+              <div class="flex flex-wrap gap-2">
+                ${project.tags.map(tag => `
+                  <span class="tag px-2 py-1 ${getTagColor(tag).bg} ${getTagColor(tag).text} rounded text-sm">${tag}</span>
+                `).join('')}
+              </div>
+            `;
+            card.addEventListener('click', () => openModal(project.id));
+            projectCardsContainer.appendChild(card);
+          });
+
+          // 過濾功能
+          const filterButtons = document.querySelectorAll('.filter-button');
+          filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+              const tag = button.getAttribute('data-tag');
+              filterButtons.forEach(btn => btn.classList.remove('bg-blue-500', 'text-white'));
+              filterButtons.forEach(btn => btn.classList.add(getTagColor(btn.getAttribute('data-tag')).bg, getTagColor(btn.getAttribute('data-tag')).text));
+              button.classList.remove(getTagColor(tag).bg, getTagColor(tag).text);
+              button.classList.add('bg-blue-500', 'text-white');
+
+              const projectCards = document.querySelectorAll('.project-card');
+              projectCards.forEach(card => {
+                const cardTags = card.getAttribute('data-tags').split(' ');
+                card.style.display = (tag === 'all' || cardTags.includes(tag)) ? 'block' : 'none';
+              });
+            });
+          });
+
+          // 預設顯示全部
+          document.querySelector('.filter-button[data-tag="all"]').click();
+        });
+    });
+
+    // 開啟模態框
+    function openModal(projectId) {
+      fetch('projects.json')
+        .then(response => response.json())
+        .then(projects => {
+          const project = projects.find(p => p.id === projectId);
+          const modal = document.getElementById('modal');
+          const modalTitle = document.getElementById('modal-title');
+          const modalContent = document.getElementById('modal-content');
+
+          modalTitle.innerHTML = project.title;
+          modalContent.innerHTML = `
+        <p class="mb-4">${project.description}</p>
+        
+        ${project.videoUrl ? `
+          <div class="mb-4">
+            <h4 class="text-lg font-semibold mb-2">展示影片</h4>
+            <iframe class="w-full h-96 rounded" src="${project.videoUrl}" title="專案影片" frameborder="0" allowfullscreen></iframe>
+          </div>
+        ` : ''}
+        ${project.videoUrl2 ? `
+          <div class="mb-4">
+            <h4 class="text-lg font-semibold mb-2">展示影片2</h4>
+            <iframe class="w-full h-96 rounded" src="${project.videoUrl2}" title="專案影片2" frameborder="0" allowfullscreen></iframe>
+          </div>
+        ` : ''}
+        ${project.pdfUrl ? `
+          <div class="mb-4">
+            <h4 class="text-lg font-semibold mb-2">相關文件</h4>
+            <iframe class="w-full h-[600px] rounded" src="${project.pdfUrl}" title="專案文件"></iframe>
+            <a href="${project.pdfUrl}" class="inline-block mt-2 text-blue-500 hover:underline" download>下載 PDF</a>
+          </div>
+        ` : ''}
+        ${project.pdfUrl2 ? `
+          <div class="mb-4">
+            <h4 class="text-lg font-semibold mb-2">相關文件2</h4>
+            <iframe class="w-full h-[600px] rounded" src="${project.pdfUrl2}" title="專案文件2"></iframe>
+            <a href="${project.pdfUrl2}" class="inline-block mt-2 text-blue-500 hover:underline" download>下載 PDF</a>
+          </div>
+        ` : ''}
+      `;
+          modal.classList.remove('hidden');
+        });
+    }
+
+    // 關閉模態框
+    function closeModal() {
+      document.getElementById('modal').classList.add('hidden');
+    }
+
+    // 點擊模態框外部關閉
+    function closeModalOnOutsideClick(event) {
+      if (event.target === document.getElementById('modal')) {
+        closeModal();
+      }
+    }
+
+    function openImageModal(src, alt) {
+      const modal = document.getElementById('modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalContent = document.getElementById('modal-content');
+
+      modalTitle.innerHTML = alt;
+      modalContent.innerHTML = `
+        <img src="${src}" alt="${alt}" class="w-full max-h-[500vh] object-contain">
+      `;
+      modal.classList.remove('hidden');
+    }
+  </script>
+</body>
+
+</html>

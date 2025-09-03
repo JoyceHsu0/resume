@@ -1,0 +1,13 @@
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.tab-content p {
+  line-height: 1.8; /* 增加行距 */
+  margin-bottom: 1rem; /* 為段落底部增加間距 */
+}
+.tab-content h3 {
+  margin-bottom: 0.75rem; /* 為標題底部增加間距 */
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "project1",
+    "title": "專案一：基於反向傳播映射醫學影像分割張量立體成像",
+    "shortDescription": "新穎的可視化系統，把「梯度加權類別激活映射 (Grad-CAM)」和「三維影像呈現技術 (Volume Rendering)」結合。",
+    "description": "本研究設計了一個新的可視化系統，把「梯度加權類別激活映射 (Grad-CAM)」和「三維影像呈現技術 (Volume Rendering)」結合。透過這個系統，使用者可以自由選擇 UNetCNX 模型裡的不同層級或通道，並看到對應的熱力圖，幫助分析模型是依據哪些特徵做判斷。為了讓系統更靈活又能順暢運作，本研究調整了模型的架構和推論方式，並把「熱力圖產生」和「三維繪製」拆成獨立模組。這樣一來，使用者就能即時改變視角或顯示方式。",
+    "tags": ["machine-learning", "python", "pytorch", "vtk", "volume-rendering", "xai"],
+    "technologies": ["Python", "PyTorch", "VTK"],
+    "videoUrl": "https://www.youtube.com/embed/uvZO47YlpQk?si=ePN_IJ7aqbIlFzBp",
+    "videoUrl2": "",
+    "pdfUrl": "./pdf/北科大碩士論文許加宜.pdf",
+    "pdfUrl2": ""
+  },
+  {
+    "id": "project2",
+    "title": "專案二：互動式3D未來世界OpenGL渲染器",
+    "shortDescription": "本專案為獨立開發的3D科幻世界模擬器，使用OpenGL與OpenCV，實現互動式行星、太空船與動畫效果。",
+    "description": "本專案由本人獨立開發，使用OpenGL與OpenCV建構科幻3D模擬器，包含中央行星、43個旋轉環圈、餘弦波軌道行星、Tie Fighter與可控太空船。多張紋理應用於不同物件，如行星、地板與天空盒。載入OBJ檔案，並添加旋轉、縮放、浮動等動畫。支援鍵盤（WASD移動相機、方向鍵旋轉、F1-F4模式切換）和滑鼠（滾輪縮放、左鍵拖曳視角）控制。解決挑戰包括天空盒居中、半透明行星環混合及OBJ縮放，展現即時互動與3D渲染技術。",
+    "tags": ["opengl", "C++", "opencv"],
+    "technologies": ["C++", "OpenGL", "OpenCV"],
+    "videoUrl": "https://www.youtube.com/embed/nZaXiDVewLI?si=Gc7AZ6Lcw4jMHKDu",
+    "videoUrl2": "",
+    "pdfUrl": "./pdf/cg2024s.pdf",
+    "pdfUrl2": ""
+  },
+  {
+    "id": "project3",
+    "title": "專案三：結合Chatbot 訂餐機器人之購物車APP",
+    "shortDescription": "開發一款模擬壽司外送APP，整合Android Studio、PHP、MySQL與Dialogflow，提供商品瀏覽、購物車、訂單管理及AI助手功能。",
+    "description": "github連結：<a href=\"https://github.com/JoyceHsu0/APP_final_project\">https://github.com/JoyceHsu0/APP_final_project</a><br>本專案為獨立開發，為一款基於Android Studio的壽司訂購外送應用程式，結合PHP後端與MySQL資料庫，提供完整購物體驗。系統功能包括首頁推薦、商品瀏覽與詳細查看、購物車管理（支援數量調整與刪除）、訂單查詢，以及AI助手（整合Dialogflow實現商品推薦、介紹、加入購物車與訂單查詢）。管理員網站支援訂單檢視與取消。設計注重使用者介面美觀與互動性，採用RecyclerView呈現商品清單，並透過Retrofit處理網路請求。整體架構強調安全與效率，展現移動應用開發技能。",
+    "tags": ["mysql", "php", "kotlin", "android-app", "restful-api"],
+    "technologies": ["MySQL", "PHP", "Kotlin", "Android Studio"],
+    "videoUrl": "",
+    "videoUrl2": "",
+    "pdfUrl": "./pdf/APP_ppt.pdf",
+    "pdfUrl2": "./pdf/APP書面報告.pdf"
+  },
+  {
+    "id": "project4",
+    "title": "專案四：智慧停車導航APP",
+    "shortDescription": "智慧停車場導航 APP，結合最短路徑演算法與室內定位，提供多車最佳停車分配、導航與尋車服務。",
+    "description": "台灣汽車數量遠大於停車位，尖峰時段常造成停車場壅塞與尋位困難。為此我們開發了一個智慧停車場導航 APP，結合專家系統與 Dijkstra 演算法，能同時為多車規劃最佳停車格與路線；並透過 iBeacon 室內定位與機器學習，提供即時導航、尋車導引、出口指引及會車提醒。此系統還結合自走車模擬驗證，展現出提升停車效率與安全的實用性與可行性。<br>負責部分：系統整合，設計資料傳輸協定(Restful API)，將前後端系統連接，以及APP的開發。",
+    "tags": ["machine-learning","python", "mysql", "java", "android-app", "restful-api"] ,
+    "technologies": ["Python", "Java", "MySQL", "PHP", "Kotlin", "Android Studio"],
+    "videoUrl": "",
+    "videoUrl2": "",
+    "pdfUrl": "./pdf/海報2.pdf",
+    "pdfUrl2": "./pdf/PARK PARK GO.pdf"
+  },
+  {
+    "id": "project5",
+    "title": "專案五：連江縣學生段考與會考成績相關性分析",
+    "shortDescription": "連江縣段考與會考成績分析專案，透過Python工具如Pandas、Seaborn、Matplotlib及Scikit-Learn探討相關性及政策影響。",
+    "description": "本專案由團隊合作完成，分析連江縣108-112學年度國中生段考與會考成績相關性，探討教學成效及政策影響。採用直方圖統計成績分布、線性回歸模型評估相關強度、小提琴圖比較學年差異，使用Python工具如Pandas、Seaborn、Matplotlib及Scikit-Learn處理資料。結果顯示段考與會考高度相關，英文、數學等科目進步顯著，受111學年度數位學習及雙語政策影響。研究提供落點分析及教學改善建議，促進教育優化。",
+    "tags": ["python"],
+    "technologies": ["Python"],
+    "videoUrl": "",
+    "videoUrl2": "",
+    "pdfUrl": "./pdf/final.pdf",
+    "pdfUrl2": "./pdf/final_report.docx.pdf"
+  },
+  {
+    "id": "project6",
+    "title": "專案六：Motion Capture in Unity",
+    "shortDescription": "透過2種技術，生成3D動作檔案並匯入Unity，實現動態角色展示。",
+    "description": "1. 虛擬解說員系統利用VIBE進行動作捕捉，從影片生成3D動作數據，並轉換為FBX格式匯入Unity，實現動態虛擬角色展示。專案包含VIBE的Windows安裝與使用說明，參考外部資源（如GitHub和YouTube教程）確保正確設置。作業展示動作捕捉技術與Unity整合的流程，強調可視化應用於虛擬角色的實用性，適用於互動式展示與動畫製作。<br>2. 聖誕小丑專案則是透過動態捕捉技術，將真人表演轉換為FBX動作檔案，並結合本人製作之音效與場景，應用於Unity中，實現角色動作展示。",
+    "tags": ["unity"],
+    "technologies": ["Unity"],
+    "videoUrl": "https://www.youtube.com/embed/t-3AnY4B3yA?si=lYznbzPEXs-MwBrW",
+    "videoUrl2": "https://www.youtube.com/embed/X9IquyMzniE?si=PcqphbCiKkiNIUIK",
+    "pdfUrl": "",
+    "pdfUrl2": ""
+  },
+  {
+    "id": "project7",
+    "title": "專案七：VR 密室逃脫體驗：透過 Unity 建立VR Room",
+    "shortDescription": "本專案利用 Unity 的 XR Interaction Toolkit，從頭開發一個 VR 密室逃脫遊戲，著重於互動式謎題設計、沉浸式環境建構，以及流暢的 VR 使用者體驗。",
+    "description": "此專案為獨立開發之完整的 VR 密室逃脫遊戲體驗，利用 Unity XR Interaction Toolkit 實現 VR 裝置與遊戲物件的互動，如物件抓取、投擲與觸發開關。透過基礎 VR 技術應用於 Unity 遊戲設計的能力，適用於 VR 遊戲開發、互動式體驗或虛擬訓練等領域。",
+    "tags": ["unity", "vr", "xr"],
+    "technologies": ["Unity", "C#", "XR Interaction Toolkit"],
+    "videoUrl": "https://www.youtube.com/embed/CiV12gaKCgc?si=qs4fAwFC31L7nzk7",
+    "videoUrl2": "",
+    "pdfUrl": "",
+    "pdfUrl2": ""
+  },
+  {
+    "id": "project8",
+    "title": "專案八：用MySQL與PHP實作購物車系統",
+    "shortDescription": "使用 PHP 與 MySQL 開發購物車系統，實作會員管理、商品瀏覽、購物車與結帳功能，培養後端開發與資料庫設計經驗。",
+    "description": "為分組作業，以 PHP 搭配 MySQL 開發購物車系統，實作會員註冊與登入、商品瀏覽、加入購物車、數量調整與結帳等功能。系統設計有效管理商品與訂單資訊，並透過 Session 機制保持使用者操作的連續性。此專案讓我熟悉後端開發流程，並培養前後端整合與資料庫設計的實作經驗。",
+    "tags": ["mysql", "php", "javascript", "restful-api"],
+    "technologies": ["MySQL", "PHP", "JavaScript", "RESTful API"],
+    "videoUrl": "https://www.youtube.com/embed/iD7zVfrN3gM?si=LKWhqbYef5zlnB3W",
+    "videoUrl2": "",
+    "pdfUrl": "",
+    "pdfUrl2": ""
+  }
+]
